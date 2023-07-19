@@ -26,7 +26,7 @@ function validateForm() {
       // Stockez le token dans le stockage local
       localStorage.setItem('jwt', token);
       // Redirigez vers la page d'accueil
-     window.location.href = './home.html';
+     window.location.href = 'home.html';
     })
     .catch(function (error) {
       console.log(error);
