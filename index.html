@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="index.js" type= "module"></script>
+    <!-- Include Axios library -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Include Babel standalone to transpile ES modules in browser -->
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone"></script>
+    
+      <!-- Include Web Components polyfill to support Edge and Firefox -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+      <form>
+        <div class="form-group">
+          <label for="username">Nom de compte:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Mot de passe:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" class="zebi">Log In</button>
+      </form>
+      <p class="note">Si ta pas de compte dommage pour toi</p>
+    </div>
+  </body>
+</html>

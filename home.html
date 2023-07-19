@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script src="https://unpkg.com/frappe-charts@latest"></script>
+
+    <script src="home.js" type="module"></script>
+
+    <!-- Include Axios library -->
+    <title>Document</title>
+    <!-- fallback for no module support -->
+<!--     <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script src="https://cdn.zingchart.com/modules/"></script>
+ -->
+</head>
+
+<body>
+    <div id="status"></div>
+    <button id="logout-btn">Logout</button>
+    <div id="barChart"></div>
+
+    <div id="audit"></div>
+
+    <select id="chart-select">
+        <option value="">Selectionne un tableau:</option>
+        <option value="piscine-js">Piscine JS</option>
+        <option value="piscine-go">Piscine Go</option>
+      </select>
+<!-- some space till next div -->
+      
+<div id="chart"></div>
+
+</body>
+
+</html>

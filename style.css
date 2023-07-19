@@ -1,0 +1,118 @@
+body {
+  background: #000;
+  font-family: 'Arial', sans-serif;
+  animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+  0% {background-color: rgb(245, 61, 199);}
+  25% {background-color: #f00;}
+  50% {background-color: #0f0;}
+  75% {background-color: #00f;}
+  100% {background-color: rgb(253, 253, 253);}
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #00f;
+  padding: 20px;
+  margin-top: 100px;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  color: #00f;
+  font-size: 2em;
+  animation: move 2s infinite;
+}
+
+@keyframes move {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 3px;
+  background: #111;
+  color: #fff;
+}
+
+.zebi {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: #000;
+  background: #0f0;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: rotate 5s infinite;
+}
+
+.zebi:hover {
+  background: #0c0;
+}
+
+.logout-btn {
+  background: rgb(101, 222, 255);
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(180deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.note {
+  color: #f00;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 20px;
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  0%,50%,100% { opacity: 1; }
+  25%,75% { opacity: 0; }
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 3px;
+  background: #111;
+  color: #fff;
+  transition: all 0.5s ease-in-out; /* Ajout de la transition pour l'animation */
+}
+
+.form-group input:focus {
+  transform: rotate(360deg); /* Faire pivoter l'élément quand il est en focus */
+}
